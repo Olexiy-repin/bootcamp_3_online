@@ -1,0 +1,223 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --title-color-light-theme: #303030;
+  --title-color-dark-theme: #fff;
+  --subtitle-color-light-theme: #303030;
+  --subtitle-color-dark-theme: #9da4bd;
+  --text-color-light-theme: #555555;
+  --text-color-dark-theme: #9da4bd;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.address {
+  font-style: normal;
+}
+
+/* ================= COMPONENTS ================= */
+.modal-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.social-links__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  color: #ff6c00;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle_dark-theme {
+  color: var(--subtitle-color-dark-theme);
+}
+
+.subtitle_light-theme {
+  color: var(--subtitle-color-light-theme);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.description_light-theme {
+  color: var(--text-color-light-theme);
+}
+
+.description_dark-theme {
+  color: var(--text-color-dark-theme);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+}
+
+.title_light-theme {
+  color: var(--title-color-light-theme);
+}
+
+.title_dark-theme {
+  color: var(--title-color-dark-theme);
+}
+
+/* ================= END COMPONENTS ================= */
+
+/* ================= HEADER ================= */
+.navigation__list-link,
+.header__tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+}
+
+.navigation__list-link:hover,
+.navigation__list-link:focus,
+.header__tel-link:hover,
+.header__tel-link:focus {
+  color: var(--accent-color);
+}
+/* ================= END HEADER ================= */
+
+/* ================= HERO ================= */
+.hero__title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+}
+/* ================= END HERO ================= */
+
+/* ================= ABOUT ================= */
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: var(--text-color-light-theme);
+}
+/* ================= END ABOUT ================= */
+
+/* ================= SERVICES ================= */
+.services__list-item-name,
+.services__list-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ================= END SERVICES ================= */
+
+/* ================= ADVANTAGES ================= */
+.advantages__list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages__list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: center;
+  color: #303030;
+}
+
+/* ================= END ADVANTAGES ================= */
+
+/* ================= MASTERS ================= */
+.masters__list-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters__list-item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ================= END MASTERS ================= */
+
+/* ================= GALLERY ================= */
+
+/* ================= END GALLERY ================= */
+
+/* ================= CONTACT FORM ================= */
+
+/* ================= END CONTACT FORM ================= */
+
+/* ================= CONTACT INFORMATION ================= */
+.contact-list__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-info__date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ================= END CONTACT INFORMATION ================= */
+
+/* ================= FOOTER ================= */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* ================= END FOOTER ================= */
