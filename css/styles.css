@@ -66,6 +66,12 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   cursor: pointer;
+  color: #fff;
+  transition: all 250ms linear;
+}
+
+.modal-btn_light-theme {
+  color: #303030;
 }
 
 .modal-btn:hover,
@@ -98,6 +104,8 @@ body {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-links__link:hover,
@@ -184,11 +192,13 @@ body {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
+  transition: background-color 250ms linear;
 }
 
 .social-list__svg {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 
 .social-list__link:hover {
@@ -203,6 +213,10 @@ body {
 
 /* ================= HEADER ================= */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -223,7 +237,13 @@ body {
 }
 
 .logo {
+  animation-duration: 1000ms;
+  animation-iteration-count: 4;
   margin-right: 70px;
+}
+
+.logo:hover {
+  animation-play-state: paused;
 }
 
 .navigation__list {
@@ -240,6 +260,8 @@ body {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
+  color: #fff;
+  transition: color 250ms linear;
 }
 
 .navigation__list-link:hover,
@@ -256,7 +278,16 @@ body {
 }
 
 .hero__left-side {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 40px;
   width: 100px;
+}
+
+.hero__left-side .social-links {
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .hero .description {
@@ -558,3 +589,40 @@ body {
   color: #9da4bd;
 }
 /* ================= END FOOTER ================= */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1000ms linear;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

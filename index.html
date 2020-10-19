@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Барбершоп</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link
@@ -18,7 +19,7 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo link" href="./index.html" aria-label="логотип">
+                <a class="logo link animate__pulse" href="./index.html" aria-label="логотип">
                     <svg width="68" height="54" class="logo__svg">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -41,7 +42,7 @@
             <address class="address">
                 <a class="header__tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
             </address>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+            <button class="modal-btn" data-modal-open type="button">онлайн-запись</button>
         </div>
     </header>
     <main>
@@ -91,7 +92,7 @@
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
                         Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="modal-btn" type="button">онлайн-запись</button>
+                    <button class="modal-btn modal-btn_light-theme" type="button">онлайн-запись</button>
                 </div>
             </div>
         </section>
@@ -369,8 +370,15 @@
                 </li>
             </ul>
         </div>
-
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="close-modal">X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
