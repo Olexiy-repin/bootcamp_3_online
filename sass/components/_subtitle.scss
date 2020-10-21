@@ -1,0 +1,38 @@
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      margin-right: 20px;
+    }
+
+    &_dark-theme {
+      color: var(--subtitle-color-dark-theme);
+
+      &::before {
+        background-color: rgba(157, 164, 189, 0.6);
+      }
+    }
+
+    &_light-theme {
+      color: var(--subtitle-color-light-theme);
+
+      &::before {
+        background-color: #303030;
+      }
+    }
+
+    .gallery & {
+      margin-bottom: 44px;
+    }
+  }

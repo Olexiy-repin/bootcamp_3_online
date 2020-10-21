@@ -1,0 +1,29 @@
+.title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+
+    &_light-theme {
+      color: var(--title-color-light-theme);
+    }
+
+    &_dark-theme {
+      color: var(--title-color-dark-theme);
+    }
+
+    .about &,
+    .advantages & {
+      margin-bottom: 20px;
+    }
+
+    .services &,
+    .masters & {
+      margin-bottom: 44px;
+    }
+
+    .contact-wrapper & {
+      margin-bottom: 40px;
+    }
+}

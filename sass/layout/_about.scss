@@ -1,0 +1,27 @@
+.about {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__right-side {
+    padding-left: 64px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.857;
+    letter-spacing: 0.02em;
+    color: var(--text-color-light-theme);
+    margin-bottom: 40px;
+    padding-right: 60px;
+  }
+}
