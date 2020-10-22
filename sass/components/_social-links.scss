@@ -1,41 +1,41 @@
 .social-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &::before {
-      display: block;
+  &::before {
+    display: block;
     content: "";
     width: 60px;
     height: 1px;
     background-color: #303030;
     margin-right: 40px;
     flex-shrink: 0;
-    }
+  }
 
-    &_rotate {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-    }
+  &_rotate {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+  }
 
-    &__item:not(:last-child) {
-      margin-right: 40px;
-    }
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
 
-    &__link {
-      font-weight: 600;
-      font-size: 11px;
-      line-height: 1.364;
-      letter-spacing: 0.2em;
-      color: #303030;
-      transition: color 250ms linear;
+  &__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+    color: #303030;
+    transition: color 250ms linear;
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
+  }
 
-    .footer & {
-      margin-left: auto;
-    }
+  .footer & {
+    margin-left: auto;
+  }
 }

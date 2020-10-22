@@ -1,27 +1,27 @@
 .title {
-    font-family: $secondary-font;
-    @include font(700, 42px, 49px);
-    letter-spacing: 0.05em;
+  font-family: $secondary-font;
+  @include font(700, 42px, 49px);
+  letter-spacing: 0.05em;
 
-    &_light-theme {
-      color: $title-color-light-theme;
-    }
+  &_light-theme {
+    color: $title-color-light-theme;
+  }
 
-    &_dark-theme {
-      color: $title-color-dark-theme;
-    }
+  &_dark-theme {
+    color: $title-color-dark-theme;
+  }
 
-    .about &,
-    .advantages & {
-      margin-bottom: 20px;
-    }
+  .about &,
+  .advantages & {
+    margin-bottom: 20px;
+  }
 
-    .services &,
-    .masters & {
-      margin-bottom: 44px;
-    }
+  .services &,
+  .masters & {
+    margin-bottom: 44px;
+  }
 
-    .contact-wrapper & {
-      margin-bottom: 40px;
-    }
+  .contact-wrapper & {
+    margin-bottom: 40px;
+  }
 }

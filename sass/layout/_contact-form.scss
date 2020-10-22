@@ -1,15 +1,15 @@
 .contact-form-section {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    padding-right: 25px;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 25px;
 }
-  
+
 .contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 560px;
 
   &__input,
   &__message {

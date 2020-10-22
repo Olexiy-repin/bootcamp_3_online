@@ -1,29 +1,29 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    .address {
-      margin-left: auto;
-      margin-right: 40px;
-    }
+  .address {
+    margin-left: auto;
+    margin-right: 40px;
+  }
 
-    &__tel-link {
-      font-weight: 600;
+  &__tel-link {
+    font-weight: 600;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.1em;
     color: #fff;
     transition: color 250ms linear;
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
+  }
 }
 
 .logo {
@@ -37,19 +37,19 @@
 }
 
 .navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
     display: flex;
-    align-items: center;
+  }
 
-    &__list {
-      display: flex;
-    }
+  &__list-item:not(:last-child) {
+    margin-right: 40px;
+  }
 
-    &__list-item:not(:last-child) {
-      margin-right: 40px;
-    }
-
-    &__list-link {
-      font-weight: 600;
+  &__list-link {
+    font-weight: 600;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.1em;
@@ -60,5 +60,5 @@
     &:focus {
       color: $accent-color;
     }
-    }
+  }
 }

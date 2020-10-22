@@ -1,26 +1,26 @@
 .description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.667;
-    letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
 
-    &_light-theme {
-      color: $text-color-light-theme;
-    }
-
-    &_dark-theme {
-      color: $text-color-dark-theme;
-    }
-
-    .hero & {
-      max-width: 400px;
-    }
-
-    .about & {
-      margin-bottom: 20px;
-    }
-
-    .advantages & {
-      padding-right: 80px;
-    }
+  &_light-theme {
+    color: $text-color-light-theme;
   }
+
+  &_dark-theme {
+    color: $text-color-dark-theme;
+  }
+
+  .hero & {
+    max-width: 400px;
+  }
+
+  .about & {
+    margin-bottom: 20px;
+  }
+
+  .advantages & {
+    padding-right: 80px;
+  }
+}

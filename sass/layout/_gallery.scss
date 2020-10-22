@@ -1,12 +1,12 @@
-  .gallery {
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
-
-    &__list-item {
-      width: calc((100% - 120px) / 4);
-      margin: 15px;
-    }
+.gallery {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
+
+  &__list-item {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
