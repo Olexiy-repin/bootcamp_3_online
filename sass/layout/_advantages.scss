@@ -29,12 +29,28 @@
     }
 
     &__list-count {
+      position: relative;
+      width: min-content;
+      margin: 0 auto;
       font-weight: 700;
       font-size: 42px;
       line-height: 1.357;
       text-align: center;
       letter-spacing: 0.05em;
       color: #303030;
+
+      &::after {
+        position: absolute;
+        top: 13px;
+        right: -9px;
+        display: block;
+        width: 9px;
+        height: 9px;
+        content: "";
+        background-image: url("../images/advantages/pluse.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
 
     &__list-description {

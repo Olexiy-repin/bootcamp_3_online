@@ -3,9 +3,7 @@
     justify-content: space-between;
 
     &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %align;
         width: 44px;
         height: 44px;
         background-color: #fff;
@@ -25,7 +23,7 @@
 
         .social-list__link:hover &,
         .social-list__link:focus & {
-            fill: var(--accent-color);
+            fill: $accent-color;
         }
     }
   }

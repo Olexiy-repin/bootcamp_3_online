@@ -17,7 +17,7 @@
     }
 
     &_dark-theme {
-      color: var(--subtitle-color-dark-theme);
+      color: $subtitle-color-dark-theme;
 
       &::before {
         background-color: rgba(157, 164, 189, 0.6);
@@ -25,7 +25,7 @@
     }
 
     &_light-theme {
-      color: var(--subtitle-color-light-theme);
+      color: $subtitle-color-light-theme;
 
       &::before {
         background-color: #303030;

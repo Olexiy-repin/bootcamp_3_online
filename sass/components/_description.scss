@@ -5,11 +5,11 @@
     letter-spacing: 0.02em;
 
     &_light-theme {
-      color: var(--text-color-light-theme);
+      color: $text-color-light-theme;
     }
 
     &_dark-theme {
-      color: var(--text-color-dark-theme);
+      color: $text-color-dark-theme;
     }
 
     .hero & {
