@@ -48,13 +48,13 @@ body {
   288dpi - 3x
 */
 
-/* @media screen and (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .banner {
     background-image: url("../images/car@2x.jpg");
   }
-} */
+}
 
 .team-list {
   display: flex;
