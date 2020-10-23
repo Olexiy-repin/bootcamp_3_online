@@ -22,11 +22,125 @@ ol {
 }
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта будет 500px или больше, применить правила внутри */
+/* @media (min-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
 
+/* Когда ширина вьюпорта будет 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: slateblue;
+  }
+} */
+
+/* Когда ширина вьюпорта от 320 до 767px, применять правила внутри */
+/* @media (max-width: 767px) {
+  body {
+    background-color: slateblue;
+  }
+} */
+
+/* Когда ширина вьюпорта от 320 до 500px, применять правила внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
 /* ========== AND ========== */
-
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: steelblue;
+  }
+} */
 /* ========== OR ========== */
-
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: tan;
+  }
+} */
 /* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+/* @media screen and (min-width: 500px) {
+  body {
+    background-color: yellow;
+  }
+} */
+/* @media print {
+  .navigation-list {
+    display: none;
+  }
 
+  button {
+    display: none;
+  }
+} */
 /* ========== ORIENTATION ========== */
+body {
+  padding: 20px 0;
+}
+.container {
+  padding: 0 15px;
+}
+
+.cards-list__item {
+  padding: 20px;
+  box-shadow: 0 6px 10px 0 #ccc;
+}
+
+.cards-list__img {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* Применить к 1,2,3 */
+  .cards-list__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cards-list__item {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Применить к 1,2 */
+  .cards-list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .cards-list__item {
+    width: 250px;
+  }
+}
